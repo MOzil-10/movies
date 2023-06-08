@@ -1,0 +1,23 @@
+
+<div class="login-Container">
+    <img class="film" src="../../assets/1132615593.jpeg" alt="">
+    <div class="logo">Mesut Ozil</div>
+     <div class="desc">
+            Mesut Özil is a German former professional footballer who played as an attacking midfielder. Özil was known for his technical skills, creativity, passing skills, and vision. He could also play as a wide midfielder. 
+        </div>
+        <div class="login-form">
+            <div class="form-group">
+                <label for="uname">Username</label>
+                 <input type="text" name="uname" class="form-control" [(ngModel)]="username">
+            </div>
+
+            <div class="form-group">
+                  <label for="pword">Password</label>
+                 <input type="password" name="pword"  class="form-control" [(ngModel)]="password">
+            </div>
+            <div class="btn-container">
+                <div class="error">{{errorMsg}}</div>
+                <button class="btn btn-dark" (click)="login()">Login</button>
+            </div>
+        </div>
+</div>
